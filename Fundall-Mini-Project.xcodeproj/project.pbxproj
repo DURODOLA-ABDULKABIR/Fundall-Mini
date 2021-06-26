@@ -13,6 +13,13 @@
 		18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D902686DAB900CF9227 /* LoginViewController.swift */; };
 		18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D982686EC0C00CF9227 /* LoginHomeScreenViewController.swift */; };
 		18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541D9B2686EC4700CF9227 /* LoginHomeScreen.storyboard */; };
+		18541DA1268788EA00CF9227 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DA0268788EA00CF9227 /* NetworkService.swift */; };
+		18541DA526878A0D00CF9227 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DA426878A0D00CF9227 /* Route.swift */; };
+		18541DA926878BA100CF9227 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DA826878BA100CF9227 /* Method.swift */; };
+		18541DB42687904300CF9227 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB32687904300CF9227 /* String+Extension.swift */; };
+		18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB626879BF000CF9227 /* NetworkingError.swift */; };
+		18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB92687ACFC00CF9227 /* NetworkResponse.swift */; };
+		18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DBC2687E37300CF9227 /* RegisterStruct.swift */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
 		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
@@ -28,6 +35,13 @@
 		18541D902686DAB900CF9227 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18541D982686EC0C00CF9227 /* LoginHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeScreenViewController.swift; sourceTree = "<group>"; };
 		18541D9B2686EC4700CF9227 /* LoginHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginHomeScreen.storyboard; sourceTree = "<group>"; };
+		18541DA0268788EA00CF9227 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		18541DA426878A0D00CF9227 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		18541DA826878BA100CF9227 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		18541DB32687904300CF9227 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		18541DB626879BF000CF9227 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		18541DB92687ACFC00CF9227 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		18541DBC2687E37300CF9227 /* RegisterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStruct.swift; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +68,7 @@
 			children = (
 				18541D852686BAD700CF9227 /* ButtonColorExtension.swift */,
 				18541D892686CB3A00CF9227 /* SetUp.swift */,
+				18541DB32687904300CF9227 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -76,6 +91,19 @@
 			path = "Login Home Screen";
 			sourceTree = "<group>";
 		};
+		18541D9F268788C100CF9227 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				18541DA0268788EA00CF9227 /* NetworkService.swift */,
+				18541DA426878A0D00CF9227 /* Route.swift */,
+				18541DA826878BA100CF9227 /* Method.swift */,
+				18541DB626879BF000CF9227 /* NetworkingError.swift */,
+				18541DB92687ACFC00CF9227 /* NetworkResponse.swift */,
+				18541DBC2687E37300CF9227 /* RegisterStruct.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		187D6CB8268691DE0011D56D = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +123,7 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				18541D9F268788C100CF9227 /* Networking */,
 				187D6CDD26869BF00011D56D /* Sign Up */,
 				18541D972686EBCF00CF9227 /* Login Home Screen */,
 				18541D8C2686DA2000CF9227 /* Log In */,
@@ -205,13 +234,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18541DA926878BA100CF9227 /* Method.swift in Sources */,
+				18541DB42687904300CF9227 /* String+Extension.swift in Sources */,
+				18541DA526878A0D00CF9227 /* Route.swift in Sources */,
 				18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */,
 				187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */,
+				18541DA1268788EA00CF9227 /* NetworkService.swift in Sources */,
 				18541D862686BAD700CF9227 /* ButtonColorExtension.swift in Sources */,
 				18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */,
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
 				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
+				18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */,
+				18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */,
 				187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */,
+				18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,15 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        
+        NetworkService.shared.myFirstRequest { (result) in
+            switch result {
+            case .success(let data):
+                print("The decoded data is \(data)")
+            case .failure(let error):
+                print("The error is \(error.localizedDescription)")
+            }
+        }
     }
     
     func setUpView() {
