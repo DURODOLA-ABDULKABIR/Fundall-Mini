@@ -95,10 +95,10 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				187D6CDD26869BF00011D56D /* Sign Up */,
 				18541D972686EBCF00CF9227 /* Login Home Screen */,
 				18541D8C2686DA2000CF9227 /* Log In */,
 				18541D842686BA8A00CF9227 /* Extensions */,
-				187D6CDD26869BF00011D56D /* Sign Up */,
 				187D6CDA268692B10011D56D /* Assets */,
 				187D6CD9268692840011D56D /* Delegates */,
 				187D6CCF268691E00011D56D /* LaunchScreen.storyboard */,

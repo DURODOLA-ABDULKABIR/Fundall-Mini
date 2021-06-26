@@ -10,6 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
     let setUp = SetUp()
     
+    @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var benefitsButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -38,6 +39,8 @@ class SignUpViewController: UIViewController {
         setUp.setLeftTextFieldImage(passwordTextField, "Key")
         setUp.setRighTextFieldImage(passwordTextField, "Disable Eye")
         
+        signUpButton.layer.cornerRadius = 3
+
     }
     
     
