@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18541D862686BAD700CF9227 /* ButtonColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D852686BAD700CF9227 /* ButtonColorExtension.swift */; };
+		18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D892686CB3A00CF9227 /* SetUp.swift */; };
+		18541D8E2686DA5000CF9227 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541D8D2686DA5000CF9227 /* Login.storyboard */; };
+		18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D902686DAB900CF9227 /* LoginViewController.swift */; };
+		18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541D982686EC0C00CF9227 /* LoginHomeScreenViewController.swift */; };
+		18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541D9B2686EC4700CF9227 /* LoginHomeScreen.storyboard */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
-		187D6CC9268691DE0011D56D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* ViewController.swift */; };
+		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
 		187D6CCC268691DE0011D56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCA268691DE0011D56D /* Main.storyboard */; };
 		187D6CCE268691E00011D56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCD268691E00011D56D /* Assets.xcassets */; };
 		187D6CD1268691E00011D56D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCF268691E00011D56D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18541D852686BAD700CF9227 /* ButtonColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColorExtension.swift; sourceTree = "<group>"; };
+		18541D892686CB3A00CF9227 /* SetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUp.swift; sourceTree = "<group>"; };
+		18541D8D2686DA5000CF9227 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		18541D902686DAB900CF9227 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18541D982686EC0C00CF9227 /* LoginHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeScreenViewController.swift; sourceTree = "<group>"; };
+		18541D9B2686EC4700CF9227 /* LoginHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginHomeScreen.storyboard; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		187D6CC8268691DE0011D56D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187D6CC8268691DE0011D56D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		187D6CCB268691DE0011D56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187D6CCD268691E00011D56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187D6CD0268691E00011D56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18541D842686BA8A00CF9227 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18541D852686BAD700CF9227 /* ButtonColorExtension.swift */,
+				18541D892686CB3A00CF9227 /* SetUp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18541D8C2686DA2000CF9227 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+				18541D8D2686DA5000CF9227 /* Login.storyboard */,
+				18541D902686DAB900CF9227 /* LoginViewController.swift */,
+			);
+			path = "Log In";
+			sourceTree = "<group>";
+		};
+		18541D972686EBCF00CF9227 /* Login Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				18541D982686EC0C00CF9227 /* LoginHomeScreenViewController.swift */,
+				18541D9B2686EC4700CF9227 /* LoginHomeScreen.storyboard */,
+			);
+			path = "Login Home Screen";
+			sourceTree = "<group>";
+		};
 		187D6CB8268691DE0011D56D = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +95,42 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
-				187D6CC4268691DE0011D56D /* AppDelegate.swift */,
-				187D6CC6268691DE0011D56D /* SceneDelegate.swift */,
-				187D6CC8268691DE0011D56D /* ViewController.swift */,
-				187D6CCA268691DE0011D56D /* Main.storyboard */,
-				187D6CCD268691E00011D56D /* Assets.xcassets */,
+				18541D972686EBCF00CF9227 /* Login Home Screen */,
+				18541D8C2686DA2000CF9227 /* Log In */,
+				18541D842686BA8A00CF9227 /* Extensions */,
+				187D6CDD26869BF00011D56D /* Sign Up */,
+				187D6CDA268692B10011D56D /* Assets */,
+				187D6CD9268692840011D56D /* Delegates */,
 				187D6CCF268691E00011D56D /* LaunchScreen.storyboard */,
 				187D6CD2268691E00011D56D /* Info.plist */,
 			);
 			path = "Fundall-Mini-Project";
+			sourceTree = "<group>";
+		};
+		187D6CD9268692840011D56D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				187D6CC4268691DE0011D56D /* AppDelegate.swift */,
+				187D6CC6268691DE0011D56D /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		187D6CDA268692B10011D56D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				187D6CCD268691E00011D56D /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		187D6CDD26869BF00011D56D /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				187D6CC8268691DE0011D56D /* SignUpViewController.swift */,
+				187D6CCA268691DE0011D56D /* Main.storyboard */,
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18541D8E2686DA5000CF9227 /* Login.storyboard in Resources */,
 				187D6CD1268691E00011D56D /* LaunchScreen.storyboard in Resources */,
 				187D6CCE268691E00011D56D /* Assets.xcassets in Resources */,
+				18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */,
 				187D6CCC268691DE0011D56D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187D6CC9268691DE0011D56D /* ViewController.swift in Sources */,
+				18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */,
+				187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */,
+				18541D862686BAD700CF9227 /* ButtonColorExtension.swift in Sources */,
+				18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */,
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
+				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
 				187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
