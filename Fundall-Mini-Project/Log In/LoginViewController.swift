@@ -11,7 +11,10 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.isHidden = true
     }
 
+    @IBAction func createAccountClicked(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
 }

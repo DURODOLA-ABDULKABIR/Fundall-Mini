@@ -21,15 +21,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        
-        NetworkService.shared.myFirstRequest { (result) in
-            switch result {
-            case .success(let data):
-                print("The decoded data is \(data)")
-            case .failure(let error):
-                print("The error is \(error.localizedDescription)")
-            }
-        }
     }
     
     func setUpView() {
@@ -49,10 +40,30 @@ class SignUpViewController: UIViewController {
         setUp.setRighTextFieldImage(passwordTextField, "Disable Eye")
         
         signUpButton.layer.cornerRadius = 3
-
     }
     
-    
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        let firstName = firstNameTextField.text
+        let lastName = lastNameTextField.text
+        let email = emailTextField.text
+        let phoneNumber = phoneNumberTextField.text
+        let password = passwordTextField.text
+        let confirmPassword = passwordTextField.text
+        let params = ["firstname": firstName, "lastname": lastName, "email": email, "password": password, "password_confirmation": confirmPassword]
+        NetworkService.shared.register(parameters: params) { (result) in
+            switch result {
+            case .success(let message):
+                print("Showing\(message)")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        
+        let LoginVC = UIStoryboard(name: "Login", bundle: nil)
+        let LoginIdentifier = LoginVC.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(LoginIdentifier, animated: true)
+    }
     
     
 }

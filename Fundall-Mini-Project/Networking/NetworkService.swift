@@ -12,9 +12,11 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest(completion: @escaping(Result<String, Error>)-> Void) {
-        request(route: .register, method: .post,  completion: completion)
+    func register(parameters: [String: Any], completion: @escaping(Result<Register, Error>)-> Void) {
+        request(route: .register, method: .post, parameters: parameters, completion: completion)
     }
+    
+    
     
     private func request<T: Decodable>(route: Route,
                                        method: Method,

@@ -20,6 +20,8 @@
 		18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB626879BF000CF9227 /* NetworkingError.swift */; };
 		18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB92687ACFC00CF9227 /* NetworkResponse.swift */; };
 		18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DBC2687E37300CF9227 /* RegisterStruct.swift */; };
+		18541DC12687E81700CF9227 /* AuthenticationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DC02687E81700CF9227 /* AuthenticationStruct.swift */; };
+		18541DC42687E8CC00CF9227 /* Validation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DC32687E8CC00CF9227 /* Validation+Extension.swift */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
 		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
@@ -42,6 +44,8 @@
 		18541DB626879BF000CF9227 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		18541DB92687ACFC00CF9227 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		18541DBC2687E37300CF9227 /* RegisterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStruct.swift; sourceTree = "<group>"; };
+		18541DC02687E81700CF9227 /* AuthenticationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStruct.swift; sourceTree = "<group>"; };
+		18541DC32687E8CC00CF9227 /* Validation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Validation+Extension.swift"; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		18541D842686BA8A00CF9227 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				18541DC32687E8CC00CF9227 /* Validation+Extension.swift */,
 				18541D852686BAD700CF9227 /* ButtonColorExtension.swift */,
 				18541D892686CB3A00CF9227 /* SetUp.swift */,
 				18541DB32687904300CF9227 /* String+Extension.swift */,
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				18541DA0268788EA00CF9227 /* NetworkService.swift */,
+				18541DC02687E81700CF9227 /* AuthenticationStruct.swift */,
 				18541DA426878A0D00CF9227 /* Route.swift */,
 				18541DA826878BA100CF9227 /* Method.swift */,
 				18541DB626879BF000CF9227 /* NetworkingError.swift */,
@@ -235,12 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				18541DA926878BA100CF9227 /* Method.swift in Sources */,
+				18541DC12687E81700CF9227 /* AuthenticationStruct.swift in Sources */,
 				18541DB42687904300CF9227 /* String+Extension.swift in Sources */,
 				18541DA526878A0D00CF9227 /* Route.swift in Sources */,
 				18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */,
 				187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */,
 				18541DA1268788EA00CF9227 /* NetworkService.swift in Sources */,
 				18541D862686BAD700CF9227 /* ButtonColorExtension.swift in Sources */,
+				18541DC42687E8CC00CF9227 /* Validation+Extension.swift in Sources */,
 				18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */,
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
 				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
