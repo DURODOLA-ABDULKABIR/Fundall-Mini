@@ -25,10 +25,12 @@ class SetUp {
     }
     
     func setLeftTextFieldImage(_ textField: UITextField, _ imageName: String) {
+        let envelopeView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+         let image = UIImage(named: imageName)
+        envelopeView.image = image
+        let viewLeft: UIView = UIView(frame: CGRect(x: 20, y: 0, width: 45, height: 30))
+        viewLeft.addSubview(envelopeView)
+        textField.leftView = viewLeft
         textField.leftViewMode = .always
-        let userImageViewText = UIImageView(frame: CGRect(x: 0, y: 0, width: 15, height: 16))
-        let image = UIImage(named: imageName)
-        userImageViewText.image = image
-        textField.leftView = userImageViewText
     }
 }

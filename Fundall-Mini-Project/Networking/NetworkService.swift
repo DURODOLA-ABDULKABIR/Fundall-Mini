@@ -16,7 +16,9 @@ struct NetworkService {
         request(route: .register, method: .post, parameters: parameters, completion: completion)
     }
     
-    
+    func login(parameters: [String: Any], completion: @escaping(Result<Authentication, Error>)-> Void) {
+        request(route: .authenticate, method: .post, parameters: parameters, completion: completion)
+    }
     
     private func request<T: Decodable>(route: Route,
                                        method: Method,

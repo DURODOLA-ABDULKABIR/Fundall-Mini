@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reI-XS-5TW">
-                                <rect key="frame" x="110.5" y="188" width="193" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reI-XS-5TW">
+                                <rect key="frame" x="111" y="170" width="225" height="67"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,6 +84,9 @@
 </string>
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createAccountClicked:" destination="pUq-NG-bKb" eventType="touchUpInside" id="oUH-Vz-WwT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -91,7 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="qTz-dR-IxT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="reI-XS-5TW" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="3c2-6j-90d"/>
+                            <constraint firstItem="reI-XS-5TW" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" constant="16.5" id="3c2-6j-90d"/>
                             <constraint firstItem="Vru-yP-hA9" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="4Sb-hc-H4K"/>
                             <constraint firstItem="qTz-dR-IxT" firstAttribute="trailing" secondItem="qzd-Ag-ygb" secondAttribute="trailing" constant="179" id="8sg-kR-hJ1"/>
                             <constraint firstItem="wHH-qu-gZP" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="LiU-hp-Kkl"/>
@@ -100,7 +103,7 @@
                             <constraint firstItem="qzd-Ag-ygb" firstAttribute="leading" secondItem="qTz-dR-IxT" secondAttribute="leading" constant="35" id="Nps-AP-29J"/>
                             <constraint firstItem="jXj-aA-1A2" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="Oiz-rr-0Ls"/>
                             <constraint firstItem="pUO-Tj-1zC" firstAttribute="top" secondItem="wHH-qu-gZP" secondAttribute="bottom" constant="53" id="Sdg-iu-yv6"/>
-                            <constraint firstItem="reI-XS-5TW" firstAttribute="top" secondItem="qTz-dR-IxT" secondAttribute="top" constant="100" id="a8h-vb-6h8"/>
+                            <constraint firstItem="reI-XS-5TW" firstAttribute="top" secondItem="qTz-dR-IxT" secondAttribute="top" constant="82" id="a8h-vb-6h8"/>
                             <constraint firstItem="Vru-yP-hA9" firstAttribute="top" secondItem="pUO-Tj-1zC" secondAttribute="bottom" constant="31" id="m0D-mk-ZLd"/>
                             <constraint firstItem="wHH-qu-gZP" firstAttribute="top" secondItem="reI-XS-5TW" secondAttribute="bottom" constant="67" id="o4f-Im-sAL"/>
                             <constraint firstItem="qTz-dR-IxT" firstAttribute="bottom" secondItem="wHH-qu-gZP" secondAttribute="bottom" constant="444" id="qV1-JR-m3Y"/>

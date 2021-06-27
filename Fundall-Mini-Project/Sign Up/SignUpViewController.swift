@@ -23,6 +23,12 @@ class SignUpViewController: UIViewController {
         setUpView()
     }
     
+    @IBAction func loginClicked(_ sender: UIButton) {
+        let storyboardName = UIStoryboard(name: "Login", bundle: nil)
+        let LoginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(LoginIdentifier, animated: true)
+    }
+    
     func setUpView() {
         cancelButton.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Arial", size: 11)!], for: UIControl.State.normal)
         benefitsButton.setTitleTextAttributes([ NSAttributedString.Key.font: UIFont(name: "Arial", size: 11)!], for: UIControl.State.normal)
@@ -38,19 +44,26 @@ class SignUpViewController: UIViewController {
         setUp.setLeftTextFieldImage(lastNameTextField, "user")
         setUp.setLeftTextFieldImage(passwordTextField, "Key")
         setUp.setRighTextFieldImage(passwordTextField, "Disable Eye")
-        
         signUpButton.layer.cornerRadius = 3
     }
     
+    func segueToLogin() {
+        let  storyboardName = UIStoryboard(name: "Login", bundle: nil)
+        let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(loginIdentifier, animated: true)
+    }
+    
     @IBAction func signUpPressed(_ sender: UIButton) {
-        let firstName = firstNameTextField.text
-        let lastName = lastNameTextField.text
-        let email = emailTextField.text
-        let phoneNumber = phoneNumberTextField.text
-        let password = passwordTextField.text
-        let confirmPassword = passwordTextField.text
+        let firstName = firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let phoneNumber = phoneNumberTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let confirmPassword = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        
         let params = ["firstname": firstName, "lastname": lastName, "email": email, "password": password, "password_confirmation": confirmPassword]
-        NetworkService.shared.register(parameters: params) { (result) in
+                NetworkService.shared.register(parameters: params as [String : Any]) { (result) in
             switch result {
             case .success(let message):
                 print("Showing\(message)")
@@ -58,11 +71,10 @@ class SignUpViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
-        
-        
-        let LoginVC = UIStoryboard(name: "Login", bundle: nil)
-        let LoginIdentifier = LoginVC.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(LoginIdentifier, animated: true)
+    }
+    
+    func validateTextFields() {
+        <#function body#>
     }
     
     
