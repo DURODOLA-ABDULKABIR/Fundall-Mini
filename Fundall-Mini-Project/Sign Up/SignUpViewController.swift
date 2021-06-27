@@ -73,10 +73,10 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    func validateTextFields() {
-        <#function body#>
-    }
-    
+//    func validateTextFields() {
+//        <#function body#>
+//    }
+//
     
 }
 
