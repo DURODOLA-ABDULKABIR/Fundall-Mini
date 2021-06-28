@@ -28,6 +28,10 @@
 		18541DF42688D01A00CF9227 /* CornerRadius+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DF32688D01A00CF9227 /* CornerRadius+Extension.swift */; };
 		18541DF9268929BA00CF9227 /* FeedbackStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DF8268929BA00CF9227 /* FeedbackStruct.swift */; };
 		18541DFD26894EB900CF9227 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18541DFC26894EB900CF9227 /* IQKeyboardManagerSwift */; };
+		18541E002689572F00CF9227 /* UserdefaulManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DFF2689572F00CF9227 /* UserdefaulManager.swift */; };
+		18541E0426896C3F00CF9227 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541E0326896C3F00CF9227 /* Cards.storyboard */; };
+		18541E0726896C6500CF9227 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E0626896C6500CF9227 /* CardsViewController.swift */; };
+		18541E0A268972DE00CF9227 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E09268972DE00CF9227 /* CollectionViewCell.swift */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
 		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
@@ -57,6 +61,10 @@
 		18541DD426882FAF00CF9227 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		18541DF32688D01A00CF9227 /* CornerRadius+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CornerRadius+Extension.swift"; sourceTree = "<group>"; };
 		18541DF8268929BA00CF9227 /* FeedbackStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStruct.swift; sourceTree = "<group>"; };
+		18541DFF2689572F00CF9227 /* UserdefaulManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdefaulManager.swift; sourceTree = "<group>"; };
+		18541E0326896C3F00CF9227 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		18541E0626896C6500CF9227 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		18541E09268972DE00CF9227 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 			children = (
 				18541D892686CB3A00CF9227 /* SetUp.swift */,
 				18541DCD268822E400CF9227 /* Alert.swift */,
+				18541DFF2689572F00CF9227 /* UserdefaulManager.swift */,
 			);
 			path = "Helper classes";
 			sourceTree = "<group>";
@@ -139,6 +148,16 @@
 				18541DD426882FAF00CF9227 /* HomeScreenViewController.swift */,
 			);
 			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		18541E0226896C1400CF9227 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				18541E0326896C3F00CF9227 /* Cards.storyboard */,
+				18541E0626896C6500CF9227 /* CardsViewController.swift */,
+				18541E09268972DE00CF9227 /* CollectionViewCell.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		187D6CB8268691DE0011D56D = {
@@ -160,6 +179,7 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				18541E0226896C1400CF9227 /* Cards */,
 				18541DD026882F4D00CF9227 /* Home Screen */,
 				18541DCB2688226D00CF9227 /* Helper classes */,
 				18541D9F268788C100CF9227 /* Networking */,
@@ -270,6 +290,7 @@
 				18541DD226882F7700CF9227 /* HomeScreen.storyboard in Resources */,
 				18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */,
 				187D6CCC268691DE0011D56D /* Main.storyboard in Resources */,
+				18541E0426896C3F00CF9227 /* Cards.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18541E002689572F00CF9227 /* UserdefaulManager.swift in Sources */,
 				18541DA926878BA100CF9227 /* Method.swift in Sources */,
 				18541DC12687E81700CF9227 /* AuthenticationStruct.swift in Sources */,
 				18541DB42687904300CF9227 /* String+Extension.swift in Sources */,
 				18541DCE268822E400CF9227 /* Alert.swift in Sources */,
 				18541DA526878A0D00CF9227 /* Route.swift in Sources */,
+				18541E0A268972DE00CF9227 /* CollectionViewCell.swift in Sources */,
 				18541DD526882FAF00CF9227 /* HomeScreenViewController.swift in Sources */,
 				18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */,
 				18541DF42688D01A00CF9227 /* CornerRadius+Extension.swift in Sources */,
@@ -297,6 +320,7 @@
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
 				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
 				18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */,
+				18541E0726896C6500CF9227 /* CardsViewController.swift in Sources */,
 				18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */,
 				187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */,
 				18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */,

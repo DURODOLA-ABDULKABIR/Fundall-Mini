@@ -32,7 +32,7 @@ class LoginHomeScreenViewController: UIViewController {
     }
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         guard let password = loginPasswordTextField.text else {return}
-        guard let email = signUpVC.emailTextField.text else {return}
+        let email = UserdefaultManager.shared.defaults?.value(forKey: "email")
         let params = ["email": email, "password": password]
         NetworkService.shared.login(parameters: params as [String : Any]) { (result) in
             switch result {
