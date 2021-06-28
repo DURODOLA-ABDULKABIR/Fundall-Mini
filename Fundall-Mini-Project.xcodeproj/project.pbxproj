@@ -36,6 +36,9 @@
 		18541E112689920F00CF9227 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E102689920F00CF9227 /* AnalyticsViewController.swift */; };
 		18541E152689DABD00CF9227 /* TopMerchantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E132689DABD00CF9227 /* TopMerchantsTableViewCell.swift */; };
 		18541E162689DABD00CF9227 /* TopMerchantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18541E142689DABD00CF9227 /* TopMerchantsTableViewCell.xib */; };
+		18541E25268A0D4600CF9227 /* UserCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541E24268A0D4600CF9227 /* UserCard.storyboard */; };
+		18541E2F268A0E0200CF9227 /* UserCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E2E268A0E0200CF9227 /* UserCardViewController.swift */; };
+		18541E32268A0E4C00CF9227 /* UserCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E31268A0E4C00CF9227 /* UserCardCollectionViewCell.swift */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
 		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
@@ -73,6 +76,9 @@
 		18541E102689920F00CF9227 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		18541E132689DABD00CF9227 /* TopMerchantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMerchantsTableViewCell.swift; sourceTree = "<group>"; };
 		18541E142689DABD00CF9227 /* TopMerchantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMerchantsTableViewCell.xib; sourceTree = "<group>"; };
+		18541E24268A0D4600CF9227 /* UserCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserCard.storyboard; sourceTree = "<group>"; };
+		18541E2E268A0E0200CF9227 /* UserCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardViewController.swift; sourceTree = "<group>"; };
+		18541E31268A0E4C00CF9227 /* UserCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +185,16 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
+		18541E23268A0D2700CF9227 /* UserCard */ = {
+			isa = PBXGroup;
+			children = (
+				18541E24268A0D4600CF9227 /* UserCard.storyboard */,
+				18541E2E268A0E0200CF9227 /* UserCardViewController.swift */,
+				18541E31268A0E4C00CF9227 /* UserCardCollectionViewCell.swift */,
+			);
+			path = UserCard;
+			sourceTree = "<group>";
+		};
 		187D6CB8268691DE0011D56D = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +214,7 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				18541E23268A0D2700CF9227 /* UserCard */,
 				18541E0C2689919D00CF9227 /* Analytics */,
 				18541E0226896C1400CF9227 /* Cards */,
 				18541DD026882F4D00CF9227 /* Home Screen */,
@@ -313,6 +330,7 @@
 				18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */,
 				187D6CCC268691DE0011D56D /* Main.storyboard in Resources */,
 				18541E0426896C3F00CF9227 /* Cards.storyboard in Resources */,
+				18541E25268A0D4600CF9227 /* UserCard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +352,14 @@
 				18541D912686DAB900CF9227 /* LoginViewController.swift in Sources */,
 				18541DF42688D01A00CF9227 /* CornerRadius+Extension.swift in Sources */,
 				187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */,
+				18541E32268A0E4C00CF9227 /* UserCardCollectionViewCell.swift in Sources */,
 				18541DF9268929BA00CF9227 /* FeedbackStruct.swift in Sources */,
 				18541DA1268788EA00CF9227 /* NetworkService.swift in Sources */,
 				18541D862686BAD700CF9227 /* ButtonColorExtension.swift in Sources */,
 				18541DC42687E8CC00CF9227 /* Validation+Extension.swift in Sources */,
 				18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */,
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
+				18541E2F268A0E0200CF9227 /* UserCardViewController.swift in Sources */,
 				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
 				18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */,
 				18541E152689DABD00CF9227 /* TopMerchantsTableViewCell.swift in Sources */,
