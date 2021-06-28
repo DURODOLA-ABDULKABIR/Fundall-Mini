@@ -20,13 +20,13 @@ class AnalyticsViewController: UIViewController {
         
         segmentedControl.setTitleTextAttributes(titleTextAttributes2, for: .normal)
         segmentedControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
-        
+        navigationController?.navigationBar.isHidden = false
         self.table.delegate = self
         self.table.dataSource = self
         self.table.register(UINib.init(nibName: "TopMerchantsTableViewCell", bundle: nil), forCellReuseIdentifier: "TopMerchantsTableViewCell")
     }
     
-        
+    
     let names = ["PizzaHut", "Amazon", "Subway"]
     let transactions = ["4 transactions", "3 transactions", "2 transactions"]
     let amounts = ["₦200", "₦180", "₦125"]
@@ -42,16 +42,12 @@ extension AnalyticsViewController: UITableViewDelegate, UITableViewDataSource {
         return names.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = table.dequeueReusableCell(withIdentifier: "TopMerchantsTableViewCell", for: indexPath) as! TopMerchantsTableViewCell
-            cell.amountLabel.text = amounts[indexPath.row]
-            cell.cellImage.image = UIImage(named: imageNames[indexPath.row])
-            cell.numberOfTransactionsLabel.text = transactions[indexPath.row]
-            cell.nameLabel.text = names[indexPath.row]
-            return cell
-            
-        
-        
-        //return UITableViewCell()
+        let cell = table.dequeueReusableCell(withIdentifier: "TopMerchantsTableViewCell", for: indexPath) as! TopMerchantsTableViewCell
+        cell.amountLabel.text = amounts[indexPath.row]
+        cell.cellImage.image = UIImage(named: imageNames[indexPath.row])
+        cell.numberOfTransactionsLabel.text = transactions[indexPath.row]
+        cell.nameLabel.text = names[indexPath.row]
+        return cell
     }
     
     

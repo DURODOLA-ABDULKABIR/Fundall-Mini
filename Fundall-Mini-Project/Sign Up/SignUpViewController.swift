@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func loginClicked(_ sender: UIButton) {
@@ -52,7 +53,7 @@ class SignUpViewController: UIViewController {
     func segueToLogin() {
         let  storyboardName = UIStoryboard(name: "Login", bundle: nil)
         let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(loginIdentifier, animated: true)
+        navigationController?.navigationBar.isHidden = false
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
@@ -66,7 +67,6 @@ class SignUpViewController: UIViewController {
         fieldValidation.validateFirstNameFields(firstName, self)
         fieldValidation.validateLastNameFields(lastName, self)
         fieldValidation.validateEmail(email, self)
-        //fieldValidation.validatePassword(password, self)
         fieldValidation.validatePhoneNumber(phoneNumber, self)
         
         UserdefaultManager.shared.getEmail(email)

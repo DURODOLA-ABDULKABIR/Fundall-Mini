@@ -8,5 +8,5 @@
 import UIKit
 
 class UserCardCollectionViewCell: UICollectionViewCell {
-        @IBOutlet weak var cellText: UILabel!
+    @IBOutlet weak var cellText: UILabel!
 }

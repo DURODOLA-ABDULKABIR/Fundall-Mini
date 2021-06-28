@@ -8,12 +8,13 @@
 import UIKit
 
 class UserCardViewController: UIViewController {
-
-    //@IBOutlet weak var topBarView: UIView!
+    
+    @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var cardsCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         cardsCollectionView.dataSource = self
+        continueButton.layer.cornerRadius = 5
     }
     
     let cards = ["Fundall Lifestyle Card", "Rave Dollar Card", "Bitcoin Wallet" ]
@@ -32,5 +33,5 @@ extension UserCardViewController: UICollectionViewDataSource {
         cell.cellText.text = cards[indexPath.row]
         return cell
     }
-
+    
 }

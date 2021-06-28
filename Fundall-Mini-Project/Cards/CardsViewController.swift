@@ -15,12 +15,12 @@ class CardsViewController: UIViewController {
         super.viewDidLoad()
         cardsCollectionView.dataSource = self
         topBarView.layer.cornerRadius = 5
+        navigationController?.navigationBar.isHidden = false
     }
     
     let cards = ["Fundall Lifestyle Card", "Rave Dollar Card", "Bitcoin Wallet" ]
     
 }
-
 
 extension CardsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -33,6 +33,4 @@ extension CardsViewController: UICollectionViewDataSource {
         cell.cellText.text = cards[indexPath.row]
         return cell
     }
-    
-    
 }
