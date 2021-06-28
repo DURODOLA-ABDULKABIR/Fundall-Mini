@@ -23,7 +23,6 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func loginClicked(_ sender: UIButton) {
@@ -50,14 +49,9 @@ class SignUpViewController: UIViewController {
         signUpButton.layer.cornerRadius = 3
     }
     
-    func segueToLogin() {
-        let  storyboardName = UIStoryboard(name: "Login", bundle: nil)
-        let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(loginIdentifier, animated: true)
-    }
-    
     @IBAction func signUpPressed(_ sender: UIButton) {
-        guard let firstName = firstNameTextField.text else { return }
+        guard let firstName = firstNameTextField.text else { print("hello")
+            return }
         guard let lastName = lastNameTextField.text else {return}
         guard let email = emailTextField.text else {return}
         guard let phoneNumber = phoneNumberTextField.text else {return}
@@ -83,6 +77,12 @@ class SignUpViewController: UIViewController {
             }
         }
         
+    }
+    
+    func segueToLogin() {
+        let  storyboardName = UIStoryboard(name: "Login", bundle: nil)
+        let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(loginIdentifier, animated: true)
     }
 }
 

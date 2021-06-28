@@ -8,7 +8,8 @@
 import Foundation
 
 struct BaseStruct: Decodable {
-    let success: Register
+    let success: Register?
+    let error: Register?
 }
 
 struct Register: Decodable {

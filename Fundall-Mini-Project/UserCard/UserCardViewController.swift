@@ -15,10 +15,10 @@ class UserCardViewController: UIViewController {
         super.viewDidLoad()
         cardsCollectionView.dataSource = self
         continueButton.layer.cornerRadius = 5
+        navigationController?.navigationBar.isHidden = false
     }
     
     let cards = ["Fundall Lifestyle Card", "Rave Dollar Card", "Bitcoin Wallet" ]
-    
 }
 
 

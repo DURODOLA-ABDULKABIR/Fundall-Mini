@@ -161,7 +161,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbb-IL-abI">
-                                <rect key="frame" x="14" y="820" width="386" height="32"/>
+                                <rect key="frame" x="14" y="822" width="386" height="32"/>
                                 <color key="backgroundColor" red="0.2582781911" green="0.91599482300000001" blue="0.57330316309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="IS1-lS-bNY"/>
@@ -214,7 +214,7 @@
                             <constraint firstItem="Ujl-9y-don" firstAttribute="top" secondItem="j4k-e8-J3u" secondAttribute="bottom" constant="45" id="OJ0-Az-gdp"/>
                             <constraint firstItem="dGw-ha-hlf" firstAttribute="top" secondItem="Ujl-9y-don" secondAttribute="bottom" constant="22.5" id="Pcr-hX-dTR"/>
                             <constraint firstItem="tzl-5T-isk" firstAttribute="trailing" secondItem="dGw-ha-hlf" secondAttribute="trailing" constant="45" id="SRF-hN-jcJ"/>
-                            <constraint firstItem="tzl-5T-isk" firstAttribute="bottom" secondItem="mbb-IL-abI" secondAttribute="bottom" constant="10" id="Sdw-Pd-Cwd"/>
+                            <constraint firstItem="tzl-5T-isk" firstAttribute="bottom" secondItem="mbb-IL-abI" secondAttribute="bottom" constant="8" id="Sdw-Pd-Cwd"/>
                             <constraint firstItem="Vou-Vq-RFZ" firstAttribute="leading" secondItem="tzl-5T-isk" secondAttribute="leading" constant="37" id="eOl-Kg-q6g"/>
                             <constraint firstItem="tzl-5T-isk" firstAttribute="trailing" secondItem="Ujl-9y-don" secondAttribute="trailing" constant="32" id="sOh-dD-PEt"/>
                             <constraint firstItem="tzl-5T-isk" firstAttribute="trailing" secondItem="Vou-Vq-RFZ" secondAttribute="trailing" constant="32" id="uGA-ky-viO"/>

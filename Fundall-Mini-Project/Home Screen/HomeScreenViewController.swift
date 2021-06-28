@@ -28,7 +28,7 @@ class HomeScreenViewController: UIViewController {
     func setUpView() {
         headerView.clipsToBounds = true
         footerView.clipsToBounds = true
-        headerView.layer.cornerRadius = 10
+        headerView.roundCorners([.bottomLeft, .bottomRight], radius: 10)
         amounView.layer.cornerRadius = 18
         greyLabelView.layer.cornerRadius = 18
         sideView.roundCorners([.topLeft, .bottomLeft], radius: 10)
