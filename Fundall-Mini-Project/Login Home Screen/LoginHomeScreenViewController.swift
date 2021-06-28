@@ -40,11 +40,11 @@ class LoginHomeScreenViewController: UIViewController {
             switch result {
             case .success(let output):
                 print(output)
+                self.segueToHomeScreen()
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
-        self.segueToHomeScreen()
     }
     
     @IBAction func createAccountClicked(_ sender: UIButton) {

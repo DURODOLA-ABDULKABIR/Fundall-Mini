@@ -8,7 +8,7 @@
 import Foundation
 
 struct NetworkResponse<T: Decodable>: Decodable {
-    let status: Int
+    let status: Int?
     let message: String?
     let data: T?
     let error: String?

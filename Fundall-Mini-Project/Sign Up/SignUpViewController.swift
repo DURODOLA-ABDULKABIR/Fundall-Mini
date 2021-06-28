@@ -28,8 +28,8 @@ class SignUpViewController: UIViewController {
     
     @IBAction func loginClicked(_ sender: UIButton) {
         let storyboardName = UIStoryboard(name: "Login", bundle: nil)
-        let LoginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.pushViewController(LoginIdentifier, animated: true)
+        let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(loginIdentifier, animated: true)
     }
     
     func setUpView() {
@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController {
     func segueToLogin() {
         let  storyboardName = UIStoryboard(name: "Login", bundle: nil)
         let loginIdentifier = storyboardName.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-        navigationController?.navigationBar.isHidden = false
+        navigationController?.pushViewController(loginIdentifier, animated: true)
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
@@ -77,12 +77,10 @@ class SignUpViewController: UIViewController {
             switch result {
             case .success(let message):
                 print("Showing\(message)")
+                self.segueToLogin()
             case .failure(let error):
-                print("this is wrong")
-                print(result)
                 print(error.localizedDescription)
             }
-            self.segueToLogin()
         }
         
     }

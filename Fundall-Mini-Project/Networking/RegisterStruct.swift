@@ -7,10 +7,10 @@
 
 import Foundation
 
+struct BaseStruct: Decodable {
+    let success: Register
+}
+
 struct Register: Decodable {
-    let firstname: String?
-    let lastname: String?
-    let email: String?
-    let password: String?
-    let password_confirmation: String?
+    let message: String?
 }
