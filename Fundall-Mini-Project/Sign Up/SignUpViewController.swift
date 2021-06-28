@@ -10,6 +10,8 @@ import UIKit
 class SignUpViewController: UIViewController {
     let setUp = SetUp()
     
+    var fieldValidation = textValidation()
+    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var benefitsButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
@@ -54,16 +56,21 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
-        let firstName = firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let lastName = lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let email = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let phoneNumber = phoneNumberTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let confirmPassword = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard let firstName = firstNameTextField.text else { return }
+        guard let lastName = lastNameTextField.text else {return}
+        guard let email = emailTextField.text else {return}
+        guard let phoneNumber = phoneNumberTextField.text else {return}
+        guard let password = passwordTextField.text else {return}
+        guard let confirmPassword = passwordTextField.text else {return}
         
         
+        fieldValidation.validateFirstNameFields(firstName, self)
+        fieldValidation.validateLastNameFields(lastName, self)
+        fieldValidation.validateEmail(email, self)
+        //fieldValidation.validatePassword(password, self)
+        fieldValidation.validatePhoneNumber(phoneNumber, self)
         let params = ["firstname": firstName, "lastname": lastName, "email": email, "password": password, "password_confirmation": confirmPassword]
-                NetworkService.shared.register(parameters: params as [String : Any]) { (result) in
+        NetworkService.shared.register(parameters: params as [String : Any]) { (result) in
             switch result {
             case .success(let message):
                 print("Showing\(message)")
@@ -71,12 +78,7 @@ class SignUpViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        self.segueToLogin()
     }
-    
-//    func validateTextFields() {
-//        <#function body#>
-//    }
-//
-    
 }
 

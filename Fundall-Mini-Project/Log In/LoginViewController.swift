@@ -20,8 +20,9 @@ class LoginViewController: UIViewController {
         let LoginVC = UIStoryboard(name: "LoginHomeScreen", bundle: nil)
         let LoginIdentifier = LoginVC.instantiateViewController(identifier: "LoginHomeScreenViewController") as! LoginHomeScreenViewController
         navigationController?.pushViewController(LoginIdentifier, animated: true)
-
     }
+    
+    
     @IBAction func createAccountClicked(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
