@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopMerchantsTableViewCell" rowHeight="68" id="KGk-i7-Jjw" customClass="TopMerchantsTableViewCell" customModule="Fundall_Mini_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-JA-JPD">
+                        <rect key="frame" x="93" y="14" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-Yu-u7I">
+                        <rect key="frame" x="77" y="36" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.10980392156862745" green="0.098039215686274508" blue="0.22352941176470587" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEF-y1-rRI">
+                        <rect key="frame" x="209" y="14" width="105" height="38"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHE-N0-ETA">
+                        <rect key="frame" x="20" y="19" width="39" height="38"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Piz" translatesAutoresizingMaskIntoConstraints="NO" id="tiX-CB-cHX">
+                                <rect key="frame" x="8" y="8" width="23" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="gnT-mz-Rgc"/>
+                            <constraint firstAttribute="width" constant="39" id="iEb-gw-bS9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HHE-N0-ETA" firstAttribute="top" secondItem="Hgb-JA-JPD" secondAttribute="top" constant="5" id="2OI-MF-5v3"/>
+                    <constraint firstAttribute="trailing" secondItem="gEF-y1-rRI" secondAttribute="trailing" constant="20" id="Ixx-J4-ZFq"/>
+                    <constraint firstAttribute="bottom" secondItem="qG4-Yu-u7I" secondAttribute="bottom" constant="17" id="OoM-40-WwX"/>
+                    <constraint firstItem="HHE-N0-ETA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PcP-BJ-9oV"/>
+                    <constraint firstItem="gEF-y1-rRI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="94.5" id="WXd-9u-Sya"/>
+                    <constraint firstItem="gEF-y1-rRI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="cxV-7x-qan"/>
+                    <constraint firstItem="Hgb-JA-JPD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="gKT-R1-1XR"/>
+                    <constraint firstItem="gEF-y1-rRI" firstAttribute="leading" secondItem="Hgb-JA-JPD" secondAttribute="trailing" constant="85" id="hbT-7A-7lc"/>
+                    <constraint firstAttribute="bottom" secondItem="gEF-y1-rRI" secondAttribute="bottom" constant="16" id="oxf-3e-f9b"/>
+                    <constraint firstItem="qG4-Yu-u7I" firstAttribute="leading" secondItem="HHE-N0-ETA" secondAttribute="trailing" constant="18" id="sNs-Cn-ojX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="gEF-y1-rRI" id="JPx-jR-dbo"/>
+                <outlet property="cellImage" destination="tiX-CB-cHX" id="rK9-5W-Tb6"/>
+                <outlet property="cellImageView" destination="HHE-N0-ETA" id="QOv-mU-b0X"/>
+                <outlet property="nameLabel" destination="Hgb-JA-JPD" id="fVO-ki-ahc"/>
+                <outlet property="numberOfTransactionsLabel" destination="qG4-Yu-u7I" id="hiQ-hF-tj1"/>
+            </connections>
+            <point key="canvasLocation" x="101.44927536231884" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Piz" width="25" height="23"/>
+    </resources>
+</document>
