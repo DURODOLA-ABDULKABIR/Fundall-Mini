@@ -32,6 +32,8 @@
 		18541E0426896C3F00CF9227 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541E0326896C3F00CF9227 /* Cards.storyboard */; };
 		18541E0726896C6500CF9227 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E0626896C6500CF9227 /* CardsViewController.swift */; };
 		18541E0A268972DE00CF9227 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E09268972DE00CF9227 /* CollectionViewCell.swift */; };
+		18541E0E268991F500CF9227 /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18541E0D268991F500CF9227 /* Analytics.storyboard */; };
+		18541E112689920F00CF9227 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541E102689920F00CF9227 /* AnalyticsViewController.swift */; };
 		187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC4268691DE0011D56D /* AppDelegate.swift */; };
 		187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC6268691DE0011D56D /* SceneDelegate.swift */; };
 		187D6CC9268691DE0011D56D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D6CC8268691DE0011D56D /* SignUpViewController.swift */; };
@@ -65,6 +67,8 @@
 		18541E0326896C3F00CF9227 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
 		18541E0626896C6500CF9227 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		18541E09268972DE00CF9227 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		18541E0D268991F500CF9227 /* Analytics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
+		18541E102689920F00CF9227 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		187D6CC1268691DE0011D56D /* Fundall-Mini-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall-Mini-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D6CC4268691DE0011D56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D6CC6268691DE0011D56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,15 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
+		18541E0C2689919D00CF9227 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				18541E0D268991F500CF9227 /* Analytics.storyboard */,
+				18541E102689920F00CF9227 /* AnalyticsViewController.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		187D6CB8268691DE0011D56D = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +192,7 @@
 		187D6CC3268691DE0011D56D /* Fundall-Mini-Project */ = {
 			isa = PBXGroup;
 			children = (
+				18541E0C2689919D00CF9227 /* Analytics */,
 				18541E0226896C1400CF9227 /* Cards */,
 				18541DD026882F4D00CF9227 /* Home Screen */,
 				18541DCB2688226D00CF9227 /* Helper classes */,
@@ -287,6 +301,7 @@
 				18541D8E2686DA5000CF9227 /* Login.storyboard in Resources */,
 				187D6CD1268691E00011D56D /* LaunchScreen.storyboard in Resources */,
 				187D6CCE268691E00011D56D /* Assets.xcassets in Resources */,
+				18541E0E268991F500CF9227 /* Analytics.storyboard in Resources */,
 				18541DD226882F7700CF9227 /* HomeScreen.storyboard in Resources */,
 				18541D9C2686EC4700CF9227 /* LoginHomeScreen.storyboard in Resources */,
 				187D6CCC268691DE0011D56D /* Main.storyboard in Resources */,
@@ -324,6 +339,7 @@
 				18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */,
 				187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */,
 				18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */,
+				18541E112689920F00CF9227 /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,4 +15,8 @@ extension UIColor{
     static var lemoncolor: UIColor = {
         return UIColor(r: 76, g: 232, b: 149)
     }()
+    
+    static var fundalPrimaryGreen: UIColor = {
+        return UIColor(r: 1, g: 105, b: 56)
+    }()
 }
