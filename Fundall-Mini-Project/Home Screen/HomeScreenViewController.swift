@@ -24,6 +24,10 @@ class HomeScreenViewController: UIViewController {
         setUpView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     func setUpView() {
         headerView.clipsToBounds = true
         footerView.clipsToBounds = true

@@ -21,9 +21,11 @@ class LoginHomeScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpView()
+        setUpView()            
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
-            
     }
     
     func setUpView() {
