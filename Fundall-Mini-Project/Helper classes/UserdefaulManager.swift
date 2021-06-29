@@ -14,4 +14,8 @@ class UserdefaultManager {
     func  getEmail(_ email: String) {
         defaults?.setValue(email, forKey: "email")
     }
+    
+    func getPassword(_ password: String) {
+        defaults?.setValue(password, forKey: "password")
+    }
 }

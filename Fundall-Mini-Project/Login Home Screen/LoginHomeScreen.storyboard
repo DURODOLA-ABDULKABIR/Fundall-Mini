@@ -70,21 +70,19 @@
                                     <action selector="loginButtonClicked:" destination="pUq-NG-bKb" eventType="touchUpInside" id="Ryy-9t-pdw"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-Ag-ygb">
-                                <rect key="frame" x="35" y="756.5" width="200" height="41"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-48" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-Ag-ygb">
+                                <rect key="frame" x="35" y="756.5" width="200" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New here? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLG-jg-CPQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.46279579399999998" green="0.45883804560000002" blue="0.45871901510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR3-F8-pvS">
-                                        <rect key="frame" x="55.5" y="0.0" width="144.5" height="41"/>
+                                        <rect key="frame" x="15.5" y="0.0" width="184.5" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <state key="normal">
-                                            <string key="title">Create Account
-</string>
+                                        <state key="normal" title="Create Account">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

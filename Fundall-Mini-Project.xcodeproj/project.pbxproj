@@ -18,7 +18,6 @@
 		18541DA926878BA100CF9227 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DA826878BA100CF9227 /* Method.swift */; };
 		18541DB42687904300CF9227 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB32687904300CF9227 /* String+Extension.swift */; };
 		18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB626879BF000CF9227 /* NetworkingError.swift */; };
-		18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DB92687ACFC00CF9227 /* NetworkResponse.swift */; };
 		18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DBC2687E37300CF9227 /* RegisterStruct.swift */; };
 		18541DC12687E81700CF9227 /* AuthenticationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DC02687E81700CF9227 /* AuthenticationStruct.swift */; };
 		18541DC42687E8CC00CF9227 /* Validation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18541DC32687E8CC00CF9227 /* Validation+Extension.swift */; };
@@ -59,7 +58,6 @@
 		18541DA826878BA100CF9227 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		18541DB32687904300CF9227 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		18541DB626879BF000CF9227 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
-		18541DB92687ACFC00CF9227 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		18541DBC2687E37300CF9227 /* RegisterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStruct.swift; sourceTree = "<group>"; };
 		18541DC02687E81700CF9227 /* AuthenticationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStruct.swift; sourceTree = "<group>"; };
 		18541DC32687E8CC00CF9227 /* Validation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Validation+Extension.swift"; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				18541DA426878A0D00CF9227 /* Route.swift */,
 				18541DA826878BA100CF9227 /* Method.swift */,
 				18541DB626879BF000CF9227 /* NetworkingError.swift */,
-				18541DB92687ACFC00CF9227 /* NetworkResponse.swift */,
 				18541DBC2687E37300CF9227 /* RegisterStruct.swift */,
 				18541DF8268929BA00CF9227 /* FeedbackStruct.swift */,
 			);
@@ -366,7 +363,6 @@
 				18541E0726896C6500CF9227 /* CardsViewController.swift in Sources */,
 				18541DBD2687E37300CF9227 /* RegisterStruct.swift in Sources */,
 				187D6CC7268691DE0011D56D /* SceneDelegate.swift in Sources */,
-				18541DBA2687ACFC00CF9227 /* NetworkResponse.swift in Sources */,
 				18541E112689920F00CF9227 /* AnalyticsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

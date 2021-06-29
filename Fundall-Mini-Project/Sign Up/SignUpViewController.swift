@@ -62,8 +62,11 @@ class SignUpViewController: UIViewController {
         fieldValidation.validateLastNameFields(lastName, self)
         fieldValidation.validateEmail(email, self)
         fieldValidation.validatePhoneNumber(phoneNumber, self)
+        fieldValidation.validatePassword(password, self)
         
         UserdefaultManager.shared.getEmail(email)
+        UserdefaultManager.shared.getPassword(password)
+    
         
         let params = ["firstname": firstName, "lastname": lastName, "email": email, "password": password, "password_confirmation": confirmPassword]
         NetworkService.shared.register(parameters: params as [String : Any]) { (result) in

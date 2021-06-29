@@ -14,6 +14,7 @@ class LoginHomeScreenViewController: UIViewController {
     let setUp = SetUp()
     let signUpVC = SignUpViewController()
     let email = UserdefaultManager.shared.defaults?.value(forKey: "email")
+    let userPassword = UserdefaultManager.shared.defaults?.value(forKey: "password")
 
 
     @IBOutlet weak var loginPasswordTextField: UITextField!
@@ -39,6 +40,9 @@ class LoginHomeScreenViewController: UIViewController {
     }
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         guard let password = loginPasswordTextField.text else {return}
+        if password != userPassword as? String {
+            AlertController.showAlert(self, title: "ERROR", message: "Wrong password, please try again")
+        }
         let params = ["email": email, "password": password]
         NetworkService.shared.login(parameters: params as [String : Any]) { (result) in
             switch result {
