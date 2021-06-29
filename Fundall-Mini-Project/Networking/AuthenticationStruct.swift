@@ -8,6 +8,12 @@
 import Foundation
 
 struct Authentication: Decodable {
+    let success: user
+}
+
+struct user: Decodable {
+    let firstname: String?
+    let lastname: String?
     let email: String?
-    let password: String?
+    let avatar: String?
 }

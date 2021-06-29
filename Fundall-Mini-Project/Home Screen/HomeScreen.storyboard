@@ -39,10 +39,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-06-14 at 23.41.46" translatesAutoresizingMaskIntoConstraints="NO" id="e7v-hb-1fu">
-                                                        <rect key="frame" x="348" y="53" width="50" height="104"/>
+                                                        <rect key="frame" x="348" y="80" width="50" height="50"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="56r-Va-93F"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="HVM-1Y-VKP"/>
                                                             <constraint firstAttribute="width" constant="50" id="S3Q-ow-Uru"/>
-                                                            <constraint firstAttribute="height" constant="104" id="pt6-bZ-CAW"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₦12,634.37" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Z-pe-tsk">
@@ -416,6 +417,7 @@
                         <outlet property="greyLabel" destination="QF1-tc-dah" id="KDA-Qy-LY5"/>
                         <outlet property="greyLabelView" destination="6V2-UE-jos" id="VSJ-vL-2pL"/>
                         <outlet property="headerView" destination="ZRM-An-xk8" id="t4E-PN-AEI"/>
+                        <outlet property="profileImage" destination="e7v-hb-1fu" id="haB-gA-Ovf"/>
                         <outlet property="sideView" destination="JxQ-0U-Ghz" id="D34-ug-7TH"/>
                         <outlet property="topBarView" destination="ojO-Vy-F5p" id="hIJ-0b-4jV"/>
                     </connections>

@@ -12,7 +12,7 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func register(parameters: [String: Any], completion: @escaping(Result<Register, Error>)-> Void) {
+    func register(parameters: [String: Any], completion: @escaping(Result<BaseStruct, Error>)-> Void) {
         request(route: .register, method: .post, parameters: parameters, completion: completion)
     }
     
@@ -28,6 +28,7 @@ struct NetworkService {
             completion(.failure(NetworkingError.unknownError))
             return
         }
+        
         URLSession.shared.dataTask(with: request) {
             data, response, error in
             var result: Result<Data, Error>?

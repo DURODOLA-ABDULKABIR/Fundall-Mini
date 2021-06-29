@@ -17,7 +17,7 @@ class CardsViewController: UIViewController {
         topBarView.layer.cornerRadius = 5
         navigationController?.navigationBar.isHidden = false
     }
-    
+
     let cards = ["Fundall Lifestyle Card", "Rave Dollar Card", "Bitcoin Wallet" ]
     
 }

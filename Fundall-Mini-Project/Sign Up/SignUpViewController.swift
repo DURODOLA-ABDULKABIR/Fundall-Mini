@@ -69,14 +69,12 @@ class SignUpViewController: UIViewController {
         NetworkService.shared.register(parameters: params as [String : Any]) { (result) in
             
             switch result {
-            case .success(let message):
-                print("Showing\(message)")
+            case .success(_):
                 self.segueToLogin()
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
-        
     }
     
     func segueToLogin() {

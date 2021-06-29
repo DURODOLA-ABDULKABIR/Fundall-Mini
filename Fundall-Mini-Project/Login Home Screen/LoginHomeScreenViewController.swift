@@ -8,9 +8,13 @@
 import UIKit
 
 class LoginHomeScreenViewController: UIViewController {
+    
+    @IBOutlet weak var userEmailLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     let setUp = SetUp()
     let signUpVC = SignUpViewController()
+    let email = UserdefaultManager.shared.defaults?.value(forKey: "email")
+
 
     @IBOutlet weak var loginPasswordTextField: UITextField!
     
@@ -25,6 +29,7 @@ class LoginHomeScreenViewController: UIViewController {
         setUp.setUpTextField(loginPasswordTextField)
         setUp.setRighTextFieldImage(loginPasswordTextField, "Disable Eye")
         loginButton.layer.cornerRadius = 3
+        userEmailLabel.text = email as? String
     }
     
     func segueToHomeScreen() {
@@ -34,7 +39,6 @@ class LoginHomeScreenViewController: UIViewController {
     }
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         guard let password = loginPasswordTextField.text else {return}
-        let email = UserdefaultManager.shared.defaults?.value(forKey: "email")
         let params = ["email": email, "password": password]
         NetworkService.shared.login(parameters: params as [String : Any]) { (result) in
             switch result {

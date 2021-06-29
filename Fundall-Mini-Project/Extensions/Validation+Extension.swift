@@ -23,15 +23,13 @@ extension String{
     public var isValidPhoneNumber: Bool {
         NSPredicate(format: "SELF MATCHES %@","^[+]?+[0-9]{5,16}$" ).evaluate(with: self)
     }
-    
-    
 }
-
 
 class textValidation {
     func validateFirstNameFields(_ firstName: String, _ viewcontroller: UIViewController){
         if firstName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
             AlertController.showAlert(viewcontroller, title: "ERROR", message: "The first name field is required.")
+            return
         }
     }
     

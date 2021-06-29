@@ -8,9 +8,8 @@
 import UIKit
 
 class HomeScreenViewController: UIViewController {
-
     
-    
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var footerView: UIView!
     @IBOutlet weak var cardView1: UIView!
     @IBOutlet weak var cardView2: UIView!
@@ -23,7 +22,7 @@ class HomeScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        }
+    }
     
     func setUpView() {
         headerView.clipsToBounds = true
@@ -37,15 +36,15 @@ class HomeScreenViewController: UIViewController {
         footerView.layer.cornerRadius = 50
         footerView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         topBarView.layer.cornerRadius = 5
-
+        profileImage.layer.cornerRadius = 25
     }
     
     @IBAction func analyticsClicked(_ sender: UIButton) {
         let  storyboardName = UIStoryboard(name: "Analytics", bundle: nil)
         let loginIdentifier = storyboardName.instantiateViewController(identifier: "AnalyticsViewController") as! AnalyticsViewController
         navigationController?.pushViewController(loginIdentifier, animated: true)
-
     }
+    
     @IBAction func requestCardClicked(_ sender: UIButton) {
         let  storyboardName = UIStoryboard(name: "UserCard", bundle: nil)
         let loginIdentifier = storyboardName.instantiateViewController(identifier: "UserCardViewController") as! UserCardViewController
@@ -56,7 +55,5 @@ class HomeScreenViewController: UIViewController {
         let  storyboardName = UIStoryboard(name: "Cards", bundle: nil)
         let loginIdentifier = storyboardName.instantiateViewController(identifier: "CardsViewController") as! CardsViewController
         navigationController?.pushViewController(loginIdentifier, animated: true)
-
     }
-    
 }
