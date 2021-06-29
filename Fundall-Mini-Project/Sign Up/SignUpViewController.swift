@@ -66,7 +66,7 @@ class SignUpViewController: UIViewController {
         
         UserdefaultManager.shared.getEmail(email)
         UserdefaultManager.shared.getPassword(password)
-    
+        UserdefaultManager.shared.getUserName(firstName)
         
         let params = ["firstname": firstName, "lastname": lastName, "email": email, "password": password, "password_confirmation": confirmPassword]
         NetworkService.shared.register(parameters: params as [String : Any]) { (result) in

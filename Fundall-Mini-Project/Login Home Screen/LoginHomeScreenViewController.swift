@@ -9,12 +9,14 @@ import UIKit
 
 class LoginHomeScreenViewController: UIViewController {
     
+    @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userEmailLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     let setUp = SetUp()
     let signUpVC = SignUpViewController()
     let email = UserdefaultManager.shared.defaults?.value(forKey: "email")
     let userPassword = UserdefaultManager.shared.defaults?.value(forKey: "password")
+    let name = UserdefaultManager.shared.defaults?.value(forKey: "name")
 
 
     @IBOutlet weak var loginPasswordTextField: UITextField!
@@ -33,6 +35,7 @@ class LoginHomeScreenViewController: UIViewController {
         setUp.setRighTextFieldImage(loginPasswordTextField, "Disable Eye")
         loginButton.layer.cornerRadius = 3
         userEmailLabel.text = email as? String
+        userName.text = "We miss you, \(String(describing: name as! String))"
     }
     
     func segueToHomeScreen() {

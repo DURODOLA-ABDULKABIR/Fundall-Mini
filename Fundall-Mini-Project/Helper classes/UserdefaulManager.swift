@@ -18,4 +18,8 @@ class UserdefaultManager {
     func getPassword(_ password: String) {
         defaults?.setValue(password, forKey: "password")
     }
+    
+    func getUserName(_ name: String) {
+        defaults?.setValue(name, forKey: "name")
+    }
 }
