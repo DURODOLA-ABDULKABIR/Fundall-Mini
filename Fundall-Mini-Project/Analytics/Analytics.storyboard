@@ -156,7 +156,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="SvF-Xp-R22"/>
                                                         </constraints>
                                                     </view>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You spent $2,732 on dining out this month. This is 25% more than last month." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-Ab-Jcp">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="You spent $2,732 on dining out this month. This is 25% more than last month." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubn-Ab-Jcp">
                                                         <rect key="frame" x="8" y="107" width="301" height="41"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>

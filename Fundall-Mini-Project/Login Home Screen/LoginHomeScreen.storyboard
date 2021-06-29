@@ -45,11 +45,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vru-yP-hA9">
-                                <rect key="frame" x="61.5" y="552.5" width="291" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-aA-1A2">
                                 <rect key="frame" x="35" y="686.5" width="344" height="32"/>
                                 <color key="backgroundColor" red="0.2582781911" green="0.91599482300000001" blue="0.57330316309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,24 +77,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vru-yP-hA9">
+                                <rect key="frame" x="61.5" y="545" width="291" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="By7-d8-5ot"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qTz-dR-IxT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vru-yP-hA9" firstAttribute="leading" secondItem="qTz-dR-IxT" secondAttribute="leading" constant="61.5" id="1G7-R0-9AF"/>
                             <constraint firstItem="reI-XS-5TW" firstAttribute="trailing" secondItem="pUO-Tj-1zC" secondAttribute="trailing" id="1MP-Kk-wsO"/>
-                            <constraint firstItem="Vru-yP-hA9" firstAttribute="centerX" secondItem="jXj-aA-1A2" secondAttribute="centerX" id="2u3-Hu-hIP"/>
-                            <constraint firstItem="Vru-yP-hA9" firstAttribute="top" secondItem="pUO-Tj-1zC" secondAttribute="bottom" constant="31" id="4i1-A1-JLQ"/>
                             <constraint firstItem="pUO-Tj-1zC" firstAttribute="top" secondItem="wHH-qu-gZP" secondAttribute="bottom" constant="53" id="BXu-Jb-nfy"/>
                             <constraint firstItem="reI-XS-5TW" firstAttribute="top" secondItem="qTz-dR-IxT" secondAttribute="top" constant="82" id="Bz5-YZ-yui"/>
                             <constraint firstItem="wHH-qu-gZP" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="CRn-Ew-fTa"/>
                             <constraint firstItem="jXj-aA-1A2" firstAttribute="leading" secondItem="qTz-dR-IxT" secondAttribute="leading" constant="35" id="IQ4-F4-Pbt"/>
-                            <constraint firstItem="pUO-Tj-1zC" firstAttribute="centerX" secondItem="Vru-yP-hA9" secondAttribute="centerX" id="awe-Cj-zPN"/>
+                            <constraint firstItem="Vru-yP-hA9" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="Mw3-T8-1rT"/>
+                            <constraint firstItem="jXj-aA-1A2" firstAttribute="centerX" secondItem="3xT-kg-tob" secondAttribute="centerX" id="QeL-uo-pI5"/>
                             <constraint firstItem="wHH-qu-gZP" firstAttribute="top" secondItem="reI-XS-5TW" secondAttribute="bottom" constant="67" id="enN-AK-dKj"/>
                             <constraint firstItem="qzd-Ag-ygb" firstAttribute="leading" secondItem="jXj-aA-1A2" secondAttribute="leading" id="iTw-jc-Rht"/>
                             <constraint firstItem="wHH-qu-gZP" firstAttribute="centerX" secondItem="pUO-Tj-1zC" secondAttribute="centerX" id="jQ6-el-Xmr"/>
                             <constraint firstItem="qTz-dR-IxT" firstAttribute="trailing" secondItem="qzd-Ag-ygb" secondAttribute="trailing" constant="179" id="nm5-ek-Apw"/>
                             <constraint firstItem="qzd-Ag-ygb" firstAttribute="top" secondItem="jXj-aA-1A2" secondAttribute="bottom" constant="38" id="npG-7l-pVL"/>
+                            <constraint firstItem="Vru-yP-hA9" firstAttribute="top" secondItem="pUO-Tj-1zC" secondAttribute="bottom" constant="23.5" id="qpC-e9-Jwb"/>
                             <constraint firstItem="reI-XS-5TW" firstAttribute="leading" secondItem="qTz-dR-IxT" secondAttribute="leading" constant="111" id="tnr-fx-7ga"/>
                             <constraint firstItem="qTz-dR-IxT" firstAttribute="bottom" secondItem="qzd-Ag-ygb" secondAttribute="bottom" constant="78.5" id="yca-DN-xdv"/>
                         </constraints>
