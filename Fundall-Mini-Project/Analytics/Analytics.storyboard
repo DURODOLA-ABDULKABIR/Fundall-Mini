@@ -319,7 +319,9 @@
                             <constraint firstItem="JTc-xM-l45" firstAttribute="width" secondItem="M8h-5E-nOc" secondAttribute="width" id="q8e-dh-Kzs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3Nf-cL-8de"/>
+                    <navigationItem key="navigationItem" id="3Nf-cL-8de">
+                        <barButtonItem key="backBarButtonItem" title="&quot; &quot;" id="Mif-CA-nmm"/>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1663"/>
                     <connections>
                         <outlet property="segmentedControl" destination="WeY-eT-Nxp" id="uuU-kT-p3d"/>

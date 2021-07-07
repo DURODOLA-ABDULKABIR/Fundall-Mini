@@ -142,6 +142,9 @@
                             <constraint firstAttribute="bottomMargin" secondItem="kxZ-cM-hKl" secondAttribute="bottom" constant="-15" id="ypS-la-rqs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userName" destination="MCA-MZ-iuf" id="YNX-Ma-zas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riS-VO-HEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

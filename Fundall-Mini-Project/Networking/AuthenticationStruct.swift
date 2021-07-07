@@ -16,4 +16,5 @@ struct user: Decodable {
     let lastname: String?
     let email: String?
     let avatar: String?
+    let access_token: String?
 }

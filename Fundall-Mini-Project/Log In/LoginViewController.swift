@@ -9,8 +9,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var userName: UILabel!
+    let name = UserdefaultManager.shared.defaults?.value(forKey: "name")
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userName.text = "\(String(describing: name as! String))'s "
     }
     
     override func viewWillAppear(_ animated: Bool) {

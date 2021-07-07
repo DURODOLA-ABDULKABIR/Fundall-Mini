@@ -44,6 +44,7 @@
 		187D6CCC268691DE0011D56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCA268691DE0011D56D /* Main.storyboard */; };
 		187D6CCE268691E00011D56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCD268691E00011D56D /* Assets.xcassets */; };
 		187D6CD1268691E00011D56D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D6CCF268691E00011D56D /* LaunchScreen.storyboard */; };
+		18F9D1AD2691BEE5004D1342 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1AC2691BEE5004D1342 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		187D6CCD268691E00011D56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187D6CD0268691E00011D56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187D6CD2268691E00011D56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F9D1AC2691BEE5004D1342 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				18541DB626879BF000CF9227 /* NetworkingError.swift */,
 				18541DBC2687E37300CF9227 /* RegisterStruct.swift */,
 				18541DF8268929BA00CF9227 /* FeedbackStruct.swift */,
+				18F9D1AC2691BEE5004D1342 /* Collection.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				18541DC42687E8CC00CF9227 /* Validation+Extension.swift in Sources */,
 				18541D8A2686CB3A00CF9227 /* SetUp.swift in Sources */,
 				187D6CC5268691DE0011D56D /* AppDelegate.swift in Sources */,
+				18F9D1AD2691BEE5004D1342 /* Collection.swift in Sources */,
 				18541E2F268A0E0200CF9227 /* UserCardViewController.swift in Sources */,
 				18541D992686EC0C00CF9227 /* LoginHomeScreenViewController.swift in Sources */,
 				18541DB726879BF000CF9227 /* NetworkingError.swift in Sources */,
