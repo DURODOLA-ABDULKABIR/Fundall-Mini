@@ -52,7 +52,7 @@ class LoginHomeScreenViewController: UIViewController {
         NetworkService.shared.login(parameters: params as [String : Any]) { (result) in
             switch result {
             case .success(let output):
-                print("getting \(output)")
+                print("getting \(output.success.user.accessToken)")
                 self.segueToHomeScreen()
             case .failure(let error):
                 print(error.localizedDescription)
